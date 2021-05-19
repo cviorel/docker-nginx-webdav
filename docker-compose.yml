@@ -1,0 +1,11 @@
+version: '2'
+services:
+  webdav:
+    build: .
+    ports:
+      - "8008:80"
+    volumes:
+      - "/mnt/iso:/www"
+    environment:
+      USERNAME: user
+      PASSWORD: passwd
